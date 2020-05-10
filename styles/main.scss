@@ -1,6 +1,14 @@
 /* Variables */
+@import './structure';
 
-/* Fonts */
+/* Typography */
+@import './typography';
+
+/* Structure */
+@import './structure';
 
 /* Components */
 @import './components/button.scss';
+@import './components/input.scss';
+@import './components/checkbox-input.scss';
+@import './components/dropdown.scss';

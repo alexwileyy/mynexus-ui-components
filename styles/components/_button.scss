@@ -1,3 +1,64 @@
+@import '../variables';
 button {
-    background-color: red;
+    font-size: 12px;
+    border-radius: 23px;
+    background-color: #C0CCCC;
+    border: 1.6px solid #C0CCCC;
+    color: white;
+    padding: 12px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+button.button {
+
+    &-grey-solid {
+        border: 1.6px solid #C0CCCC;
+        background-color: #C0CCCC;
+
+        img {
+            background-color: #B0C1C0;
+        }
+    }
+
+    &-orange-solid {
+        border: 1.6px solid rgb(255, 120, 0);
+        background-color: rgb(255, 120, 0);
+        box-shadow: 5px 5px 8px rgba(255, 120, 0, .65);
+
+        img {
+            background-color: #D64C00;
+        }
+    }
+
+    &-grey-outline {
+        border: 1.6px solid #C0CCCC;
+        background-color: transparent;
+        color: #AFC0BF;
+
+        img {
+            background-color: transparent;
+        }
+    }
+
+    &-icon-right {
+        padding: 6px 6px 6px 18px;
+        img {
+            width: 30px;
+            border-radius: 100%;
+            padding: 5px;
+            margin-left: 5px;
+        }
+    }
+
+    &-icon-left {
+        padding: 6px 18px 6px 6px;
+        img {
+            width: 30px;
+            border-radius: 100%;
+            padding: 5px;
+            margin-right: 5px;
+        }
+    }
 }

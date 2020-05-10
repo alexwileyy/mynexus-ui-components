@@ -1,0 +1,24 @@
+@import './variables';
+html, body {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: $baseFontSize;
+    padding: 20px;
+    background-color: #EAF1F1;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.group-title {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.group-title {
+    margin: 20px auto;
+}
+
+.section {
+    margin-bottom: 60px;
+}
