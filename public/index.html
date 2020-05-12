@@ -46,14 +46,13 @@
 
           <div class="row">
             <div class="col-sm">
-              <button class="button-grey-solid button-icon-right">Button <img src="/img/arrow-right.svg" /></button>
+              <button class="button-grey-solid button-icon-right">Button <div><img src="/img/arrow-right.svg" /></div></button>
             </div>
             <div class="col-sm">
-              <button class="button-orange-solid button-icon-right">Button <img src="/img/arrow-right.svg" /></button>
+              <button class="button-orange-solid button-icon-right">Button <div><img src="/img/arrow-right.svg" /></div></button>
             </div>
             <div class="col-sm">
-              <button class="button-grey-outline button-icon-right">Button <img
-                  src="/img/arrow-right-grey.svg" /></button>
+              <button class="button-grey-outline button-icon-right">Button <div><img src="/img/arrow-right-grey.svg" /></div></button>
             </div>
           </div>
 
@@ -65,13 +64,13 @@
 
           <div class="row">
             <div class="col-sm">
-              <button class="button-grey-solid button-icon-left"><img src="/img/chat-white.svg" /> Button</button>
+              <button class="button-grey-solid button-icon-left"><div><img src="/img/chat-white.svg" /></div> Button</button>
             </div>
             <div class="col-sm">
-              <button class="button-orange-solid button-icon-left"><img src="/img/chat-white.svg" /> Button</button>
+              <button class="button-orange-solid button-icon-left"><div><img src="/img/chat-white.svg" /></div> Button</button>
             </div>
             <div class="col-sm">
-              <button class="button-grey-outline button-icon-left"><img src="/img/chat-grey.svg" /> Button</button>
+              <button class="button-grey-outline button-icon-left"><div><img src="/img/chat-grey.svg" /></div> Button</button>
             </div>
           </div>
 
@@ -146,7 +145,7 @@
 
     <div class="row section">
 
-      <!-- Checkboxes -->
+      <!-- Checkboxes & Tooltips -->
       <div class="col-sm-6">
         <div class="container-fluid">
 
@@ -191,7 +190,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row section">
 
             <div class="col-sm">
 
@@ -213,6 +212,55 @@
             </div>
 
 
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Tooltip</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <!-- Tooltip code here -->
+
+              <div class="action-menu">
+                <ul>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/move-grey.svg" alt="Move icon" />
+                      <img src="img/move-white.svg" alt="Move icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/cross-grey.svg" alt="Corss icon" />
+                      <img src="img/cross-white.svg" alt="Corss icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/star-grey.svg" alt="Star icon" />
+                      <img src="img/star-white.svg" alt="Star icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/flag-grey.svg" alt="Flag icon" />
+                      <img src="img/flag-white.svg" alt="Flag icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/mail-grey.svg" alt="Flag icon" />
+                      <img src="img/mail-white.svg" alt="Flag icon" />
+                    </button>
+                  </li>
+                </ul>
+                <span class="triangle"></span>
+              </div>
+
+            </div>
           </div>
 
         </div>
@@ -313,6 +361,173 @@
 
       </div>
 
+    </div>
+
+    <!-- Explore Page Components -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="section-title">Explore Page Components</h2>
+      </div>
+    </div>
+
+    <!-- Company Box -->
+    <div class="row">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-sm">
+            <h2>Company Box</h2>
+          </div>
+        </div>
+
+        <div class="row section">
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="group-title">Company Box w/gem</h3>
+            <!-- Company box w/gidden gem -->
+            <div class="company-box">
+              <div class="company-box__header">
+                <img src="img/man-kitchen-100.jpg" alt="" class="company-box__header--image" />
+                <div class="company-box__header--wrapper">
+                  <img src="/img/launch.svg" alt="Rocket ship launching upwards" />
+                  <div>
+                    <p class="company-box__header--company-name">
+                      John Smith & Co. Ltd
+                    </p>
+                    <p class="company-box__header--sector">
+                      Sector
+                    </p>
+                  </div>
+                </div>
+                <button class="button-orange-solid company-box__header--button no-cursor">Seeking Up to £50K</button>
+              </div>
+              <div class="company-box__actions">
+                <div class="company-box__actions--left">
+                  <button class="company-box__match-button hidden-gem">
+                    <img src="/img/gem-white.svg" alt="Gen shape"/>
+                    Hidden Gem
+                  </button>
+                  <img src="img/options-button.svg" alt="Options with three dots icon" class="company-box__actions--options" />
+                </div>
+                <button class="button-grey-outline button-icon-right">View <div><img src="/img/arrow-right-grey.svg" /></div></button>
+              </div>
+              <img src="img/company-box-menu.svg" alt="Curved menu with three dots" class="company-box__menu" />
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="group-title">Company Box w/match</h3>
+            <!-- Company Box w/match -->
+            <div class="company-box">
+              <div class="company-box__header">
+                <img src="img/man-kitchen-100.jpg" alt="" class="company-box__header--image" />
+                <div class="company-box__header--wrapper">
+                  <img src="/img/launch.svg" alt="Rocket ship launching upwards" />
+                  <div>
+                    <p class="company-box__header--company-name">
+                      John Smith & Co. Ltd
+                    </p>
+                    <p class="company-box__header--sector">
+                      Sector
+                    </p>
+                  </div>
+                </div>
+                <button class="button-orange-solid company-box__header--button no-cursor">Seeking Up to £50K</button>
+              </div>
+              <div class="company-box__actions">
+                <div class="company-box__actions--left">
+                  <button class="company-box__match-button">95% Match</button>
+                  <img src="img/options-button.svg" alt="Options with three dots icon" class="company-box__actions--options" />
+                </div>
+                <button class="button-grey-outline button-icon-right">View <div><img src="/img/arrow-right-grey.svg" /></div></button>
+              </div>
+              <img src="img/company-box-menu.svg" alt="Curved menu with three dots" class="company-box__menu" />
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="group-title">Buttons w/ tooltip</h3>
+            <!-- Buttons w/ tooltip -->
+            <div class="company-box">
+              <div class="company-box__header">
+                <img src="img/man-kitchen-100.jpg" alt="" class="company-box__header--image" />
+                <div class="company-box__header--wrapper">
+                  <img src="/img/launch.svg" alt="Rocket ship launching upwards" />
+                  <div>
+                    <p class="company-box__header--company-name">
+                      John Smith & Co. Ltd
+                    </p>
+                    <p class="company-box__header--sector">
+                      Sector
+                    </p>
+                  </div>
+                </div>
+                <button class="button-orange-solid company-box__header--button no-cursor">Seeking Up to £50K</button>
+              </div>
+              <div class="company-box__actions">
+                <div class="company-box__actions--left">
+                  <button class="company-box__match-button ">75% Match</button>
+                  <img src="img/options-button.svg" alt="Options with three dots icon" class="company-box__actions--options" />
+                </div>
+                <button class="button-grey-outline button-icon-right">View <div><img src="/img/arrow-right-grey.svg" /></div></button>
+              </div>
+              <img src="img/company-box-menu.svg" alt="Curved menu with three dots" class="company-box__menu" />
+              <div class="action-menu">
+                <ul>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/move-grey.svg" alt="Move icon" />
+                      <img src="img/move-white.svg" alt="Move icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/cross-grey.svg" alt="Corss icon" />
+                      <img src="img/cross-white.svg" alt="Corss icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/star-grey.svg" alt="Star icon" />
+                      <img src="img/star-white.svg" alt="Star icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/flag-grey.svg" alt="Flag icon" />
+                      <img src="img/flag-white.svg" alt="Flag icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="action-menu__button">
+                      <img src="img/mail-grey.svg" alt="Flag icon" />
+                      <img src="img/mail-white.svg" alt="Flag icon" />
+                    </button>
+                  </li>
+                </ul>
+                <span class="triangle"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Filters</h2>
+          </div>
+
+
+          <div class="col-sm-8">
+            <!-- Filter Box -->
+            <div class="filter-box">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
 
