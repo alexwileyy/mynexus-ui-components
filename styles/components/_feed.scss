@@ -1,0 +1,78 @@
+@import '../variables';
+
+.feed-box {
+    background-color: white;
+    border-radius: $boxBorderRadius;
+    padding: 30px;
+    height: 668px;
+    overflow: scroll;
+
+    &__title {
+        font-size: $boxTitleFontSize;
+        color: #4d5b59;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        background-color: #ffac61;
+        padding: 25px;
+        border-radius: 23.7993px;
+        margin-bottom: 20px;
+
+        &--header {
+            display: flex;
+            flex-wrap: wrap;
+
+            img {
+                width: 39px;
+                height: 39px;
+                object-fit: cover;
+                border-radius: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        &--name {
+            color: #4d5b59;
+            font-weight: 700;
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: -2px;
+        }
+
+        &--timestamp {
+            color: white;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        &--content {
+            font-size: 14px;
+            margin-top: 12px;
+            color: white;
+
+            p {
+                font-size: 15px;
+            }
+
+            & > img {
+                width: 100%;
+                border-radius: 15px;
+            }
+    
+            video {
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+
+    }
+
+}

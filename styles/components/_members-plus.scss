@@ -1,0 +1,101 @@
+@import '../variables';
+
+.member-plus {
+    background-color: white;
+    border-radius: $boxBorderRadius;
+
+    &__header {
+        position: relative;
+        border-radius: $boxBorderRadius;
+        padding: 60px 40px 40px 40px;
+        text-align: center;
+        overflow: hidden;
+
+        &--background, &--overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        &--background {
+            object-fit: cover;
+        }
+
+        &--overlay {
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,33,71,1) 100%);
+        }
+
+        &--content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        &--pill {
+            width: 25px;
+            height: 5px;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            opacity: .3;
+            z-index: 1;
+            border-radius: 30px;
+        }
+
+        &--icon {
+            width: 58px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        &--title {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        &--body {
+            font-weight: 400;
+            line-height: 22px;
+            font-size: 12px;
+        }
+    }
+
+    &__content {
+        padding: 35px 20px;
+
+        &--list {
+            list-style-type: none;
+            margin-left: 1em;
+            padding: 0;
+            margin-bottom: 30px;
+
+            li {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+                color: #b0c1c0;
+                font-size: 13px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        button {
+            margin: auto;
+        }
+    }
+}

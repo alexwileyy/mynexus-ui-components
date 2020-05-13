@@ -1,0 +1,51 @@
+@import '../variables';
+
+.updates-box {
+    background-color: white;
+    border-radius: 53.39px;
+    padding: 30px;
+
+    &__title {
+        font-size: $boxTitleFontSize;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #4d5b59;
+    }
+
+    &__field {
+        position: relative;
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            background-color: #ebf2f2;
+            border-radius: 30px;
+            border: none;
+            padding: 20px 20px 20px 95px;
+            height: 200px;
+            min-height: 100px;
+            max-height: 300px;
+        }
+        img {
+            width: 61px;
+            height: 61px;
+            object-fit: cover;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            border-radius: 15px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        &--left {
+            display: flex;
+            button {
+                margin-right: 10px;
+            }
+        }
+    }
+}

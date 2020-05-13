@@ -1,0 +1,19 @@
+.bullet-point {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: #ff7800;
+    margin-right: 20px;
+
+    &--teal {
+        background-color: #0081a0;
+    }
+
+    &--orange {
+        background-color: #ff7800;
+    }
+
+    &--dark-blue {
+        background-color: #002147;
+    }
+}

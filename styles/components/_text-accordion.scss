@@ -5,6 +5,7 @@ $borderRadius: 53.39px;
     border-radius: $borderRadius;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 
     &__left, &__right {
         flex-basis: 50%;
@@ -100,6 +101,13 @@ $borderRadius: 53.39px;
                 background-color: #ebf2f2;
             }
         }
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 115.18px;
     }
 
 }
