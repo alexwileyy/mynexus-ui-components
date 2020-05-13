@@ -1,0 +1,74 @@
+@import '../variables';
+
+.analytics-box {
+    background-color: white;
+    border-radius: $boxBorderRadius;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+
+    &__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 115px;
+    }
+
+    &__left, &__right {
+        flex-basis: 50%;
+        @media screen and (max-width: 969px){
+            flex-basis: 100%;
+        }
+    }
+
+    &__left {
+        background-color: #ebf2f2;
+        padding: 40px;
+        border-radius: 23.7993px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 54px;
+        }
+
+        &--text {
+            font-size: 25px;
+            font-weight: 700;
+            color: #4d5b59;
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+
+        &--views {
+            font-size: 44px;
+            font-weight: 400;
+            color: #728783;
+        }
+    }
+
+    &__right {
+        padding: 0 40px;
+
+        &--title {
+            font-weight: 700;
+            color: #4d5b59;
+        }
+
+        &--text {
+            font-size: 14px;
+            color: #b0c1c0;
+        }
+
+        @media screen and (max-width: 969px){
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+    }
+
+
+}
