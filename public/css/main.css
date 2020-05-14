@@ -151,7 +151,8 @@ input {
   padding-right: 50px;
   outline: none;
   color: #728783;
-  font-size: 12px; }
+  font-size: 12px;
+  letter-spacing: 1px; }
   input::-webkit-input-placeholder {
     color: #72878397; }
   input::-moz-placeholder {
@@ -290,7 +291,7 @@ input[type=checkbox] {
     justify-content: center;
     border: none;
     color: #4d5b59;
-    font-size: 12px; }
+    font-size: 15px; }
     .dropdown-account-box-button img {
       width: 17px;
       margin-left: 10px; }
@@ -441,7 +442,7 @@ input[type=checkbox] {
     justify-content: center;
     flex-wrap: wrap; }
     .action-menu ul li {
-      margin: 0 2px; }
+      margin: 0 4px; }
   .action-menu__button {
     border-radius: 100%;
     background-color: #ebf2f2;
@@ -1029,7 +1030,10 @@ input[type=checkbox] {
       color: #4d5b59; }
     .analytics-box__right--text {
       font-size: 14px;
-      color: #b0c1c0; }
+      color: #b0c1c0;
+      margin-bottom: 30px;
+      font-size: 12px;
+      line-height: 23px; }
     @media screen and (max-width: 969px) {
       .analytics-box__right {
         margin-top: 20px;

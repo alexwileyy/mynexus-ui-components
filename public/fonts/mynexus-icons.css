@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jxdbth');
-  src:  url('fonts/icomoon.eot?jxdbth#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jxdbth') format('truetype'),
-    url('fonts/icomoon.woff?jxdbth') format('woff'),
-    url('fonts/icomoon.svg?jxdbth#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?einrqj');
+  src:  url('fonts/icomoon.eot?einrqj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?einrqj') format('truetype'),
+    url('fonts/icomoon.woff?einrqj') format('woff'),
+    url('fonts/icomoon.svg?einrqj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,70 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-time:before {
+  content: "\e929";
+  color: #728783;
+}
+.icon-user-settings:before {
+  content: "\e92a";
+  color: #728783;
+}
+.icon-people-network:before {
+  content: "\e92b";
+  color: #728783;
+}
+.icon-people-group:before {
+  content: "\e92c";
+  color: #728783;
+}
+.icon-bank:before {
+  content: "\e92d";
+  color: #728783;
+}
+.icon-coalition:before {
+  content: "\e92e";
+  color: #728783;
+}
+.icon-network:before {
+  content: "\e92f";
+  color: #728783;
+}
+.icon-power-brain:before {
+  content: "\e930";
+  color: #728783;
+}
+.icon-launch:before {
+  content: "\e931";
+  color: #728783;
+}
+.icon-move:before {
+  content: "\e932";
+  color: #728783;
+}
+.icon-eye:before {
+  content: "\e933";
+  color: #728783;
+}
+.icon-person-stars:before {
+  content: "\e934";
+  color: #728783;
+}
+.icon-controller:before {
+  content: "\e935";
+  color: #728783;
+}
+.icon-fingerprint:before {
+  content: "\e936";
+  color: #728783;
+}
+.icon-picture:before {
+  content: "\e937";
+  color: #728783;
+}
+.icon-file:before {
+  content: "\e938";
+  color: #728783;
+}
 .icon-arrow:before {
   content: "\e900";
   color: #b0c1c0;
