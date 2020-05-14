@@ -78,15 +78,18 @@
             list-style-type: none;
             margin-left: 1em;
             padding: 0;
-            margin-bottom: 30px;
+            margin-bottom: 38px;
 
             li {
                 display: flex;
-                align-items: center;
-                flex-wrap: wrap;
+                align-items: top;
                 margin-bottom: 25px;
                 color: #b0c1c0;
                 font-size: 13px;
+
+                & > .bullet-point {
+                    margin-top: 3px;
+                }
 
                 &:last-child {
                     margin-bottom: 0;

@@ -22,3 +22,19 @@ html, body {
 .section {
     margin-bottom: 60px;
 }
+
+.icons {
+
+    &--small i {
+        font-size: 25px;
+    }
+
+    &--large i {
+        font-size: 60px;
+    }
+    
+    p {
+        text-transform: capitalize;
+    }
+    
+}

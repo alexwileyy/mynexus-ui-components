@@ -42,12 +42,20 @@
             li {
                 margin-right: 60px;
                 margin-bottom: 15px;
+
+                @media screen and (max-width: 768px){
+                    margin-right: 40px;
+                }
             }
+        }
+
+        &--small-buttons button {
+            padding: 12px;
         }
 
         &--small-margin {
             li {
-                margin-right: 18px;
+                margin-right: 10px;
             }
         }
 
@@ -102,6 +110,10 @@
 
         &.active span, &:hover span {
             color: white;
+        }
+
+        &.active ~ p, &:hover ~ p {
+            color: #c0cccc;
         }
 
         &.active, &:hover {
@@ -173,7 +185,7 @@
             }
 
             @media screen and (max-width: 1500px){
-                gap: 10px 10px;
+                gap: 15px 10px;
             }
 
             @media screen and (max-width: 1280px){
@@ -195,6 +207,18 @@
                 grid-template-areas: ". . ." ". . ." ". . ." ". . .";
             }
 
+            @media screen and (max-width: 560px){
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: ". ." ". ." ". ." ". ." ". .";
+            }
+
+            @media screen and (max-width: 580px){
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "." "." "." "." "." ".";
+            }
+
         }
 
         .slider-track {
@@ -205,6 +229,8 @@
 
     }
 
-
+    @media screen and (max-width: 460px){
+        padding: 30px 5px;
+    }
 
 }

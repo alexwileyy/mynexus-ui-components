@@ -6,8 +6,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
+    padding: 35px;
 
     &__menu {
         position: absolute;
@@ -52,7 +51,7 @@
     }
 
     &__right {
-        padding: 0 40px;
+        padding: 0 10px 0 45px;
 
         &--title {
             font-weight: 700;

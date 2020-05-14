@@ -3,12 +3,12 @@
 .updates-box {
     background-color: white;
     border-radius: 53.39px;
-    padding: 30px;
+    padding: 50px;
 
     &__title {
         font-size: $boxTitleFontSize;
         font-weight: 700;
-        margin-bottom: 15px;
+        margin-bottom: 35px;
         color: #4d5b59;
     }
 
@@ -25,6 +25,11 @@
             height: 200px;
             min-height: 100px;
             max-height: 300px;
+            font-size: 14px;
+
+            @media screen and (max-width: 576px){
+                padding: 89px 20px 20px 20px;
+            }
         }
         img {
             width: 61px;
@@ -41,11 +46,27 @@
         display: flex;
         margin-top: 20px;
         justify-content: space-between;
+        flex-wrap: wrap;
         &--left {
             display: flex;
+            flex-wrap: wrap;
             button {
                 margin-right: 10px;
             }
         }
+        @media screen and (max-width: 768px){
+            button {
+                margin-bottom: 5px;
+            }
+        }
+        @media screen and (max-width: 380px){
+            button {
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        padding: 30px;
     }
 }

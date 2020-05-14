@@ -5,7 +5,7 @@ button {
     background-color: #C0CCCC;
     border: 1.6px solid #C0CCCC;
     color: white;
-    padding: 12px 30px;
+    padding: 12px 45px;
     font-weight: 700;
     cursor: pointer;
     outline: none;
@@ -53,28 +53,29 @@ button.button {
 
     &-icon-right {
         padding: 6px 6px 6px 18px;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: uppercase;
+        letter-spacing: 4px;
 
         & > div {
             order: 2;
             width: 30px;
             border-radius: 100%;
             padding: 6px;
-            margin-left: 8px;
+            margin-left: 5px;
         }
 
     }
 
     &-icon-left {
-        padding: 6px 18px 6px 6px;
+        padding: 6px 34px 6px 6px;
         font-weight: 400;
 
         & > div {
             width: 30px;
             border-radius: 100%;
             padding: 6px;
-            margin-right: 15px;
+            margin-right: 23px;
         }
     }
 }

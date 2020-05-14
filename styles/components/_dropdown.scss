@@ -75,6 +75,10 @@
                 strong {
                     color: #4d5b59;
                 }
+
+                &:last-child {
+                    text-transform: uppercase;
+                }
             }
         }
     }

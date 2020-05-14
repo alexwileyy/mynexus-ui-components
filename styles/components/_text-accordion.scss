@@ -10,7 +10,7 @@ $borderRadius: 53.39px;
     &__left, &__right {
         flex-basis: 50%;
 
-        @media screen and (max-width: 1037px){
+        @media screen and (max-width: 992px){
             flex-basis: 100%;
         }
     }
@@ -29,8 +29,16 @@ $borderRadius: 53.39px;
 
         &--title {
             text-align: center;
-            margin-top: 12px;
             color: white;
+            text-transform: uppercase;
+            margin: 25px auto;
+            font-weight: 600;
+
+            @media screen and (max-width: 400px){
+                margin: 20px 0 20px 38px;
+                text-align: left;
+                font-size: 11px;
+            }
         }
 
         &--image {
@@ -60,10 +68,26 @@ $borderRadius: 53.39px;
                 font-size: 43px;
                 font-weight: 900;
 
+                @media screen and (max-width: 580px){
+                    font-size: 30px;
+                }
+
                 span {
                     font-weight: 400;
                     text-transform: initial;
                 }
+
+                @media screen and (max-width: 380px){
+                    font-size: 21px;
+                }
+            }
+
+            @media screen and (max-width: 992px){
+                padding: 100px 40px;
+            }
+
+            @media screen and (max-width: 580px){
+                padding: 80px 20px;
             }
         }
     }
@@ -93,13 +117,20 @@ $borderRadius: 53.39px;
         }
 
         &--body {
-            font-size: 14px;
+            font-size: 12px;
+            color: #4d5b59;
+            line-height: 22px;
         }
 
         .slider-track {
+            margin-top: 20px;
             li:not(.active) {
                 background-color: #ebf2f2;
             }
+        }
+
+        @media screen and (max-width: 500px){
+            padding: 30px 6%;
         }
     }
 
