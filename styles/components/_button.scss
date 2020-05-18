@@ -1,5 +1,6 @@
 @import '../variables';
-button {
+
+.base-button {
     font-size: 12px;
     border-radius: 50px;
     background-color: #C0CCCC;
@@ -13,17 +14,33 @@ button {
     justify-content: center;
     align-items: center;
     line-height: 17px;
+    transition: all 0.3s ease;
+    
+}
+
+button {
+    @extend .base-button;
 
     &.no-cursor {
         cursor: default;
     }
 }
 
-button.button {
+.button {
+    @extend .base-button;
+    
+    &.no-cursor {
+        cursor: default;
+    }
 
     &-grey-solid {
         border: 1.6px solid #C0CCCC;
-        background-color: #C0CCCC;
+        background-color: #c0cccc;
+
+        &:hover {
+            border-color: hsl(180, 11%, 74%);
+            background-color: hsl(180, 11%, 74%);
+        }
 
         & > div {
             background-color: #B0C1C0;
@@ -35,6 +52,11 @@ button.button {
         background-color: rgb(255, 120, 0);
         box-shadow: 5px 5px 8px rgba(255, 120, 0, .65);
 
+        &:hover {
+            border-color: hsl(28, 100%, 47%);
+            background-color: hsl(28, 100%, 47%);
+        }
+
         & > div {
             background-color: #D64C00;
         }
@@ -44,6 +66,11 @@ button.button {
         border: 1.6px solid #C0CCCC;
         background-color: transparent;
         color: #AFC0BF;
+
+        &:hover {
+            border-color: hsl(180, 11%, 74%);
+            color: hsl(176, 12%, 68%)
+        }
 
         & > div {
             background-color: transparent;

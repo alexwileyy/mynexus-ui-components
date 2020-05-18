@@ -1,4 +1,4 @@
-input[type=checkbox] {
+input[type=checkbox], input[type=radio] {
     position: relative;
     background-color: #EBF2F2;
     -webkit-appearance: none;
@@ -36,7 +36,7 @@ input[type=checkbox] {
          }
      }
 
-     &.checkbox-square {
+     &.checkbox-square, &.radio-square {
          border-radius: 4px;
 
          &:after {
@@ -46,7 +46,7 @@ input[type=checkbox] {
 }
 
 
-.checkbox {
+.checkbox, .radio {
     display: flex;
     align-items: center;
     color: #728783;
