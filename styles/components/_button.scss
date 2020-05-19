@@ -5,7 +5,7 @@
     border-radius: 50px;
     background-color: #C0CCCC;
     border: 1.6px solid #C0CCCC;
-    color: white;
+    color: white !important;
     padding: 12px 45px;
     font-weight: 700;
     cursor: pointer;
@@ -15,7 +15,7 @@
     align-items: center;
     line-height: 17px;
     transition: all 0.3s ease;
-    
+    text-decoration: none !important;
 }
 
 button {
@@ -28,6 +28,7 @@ button {
 
 .button {
     @extend .base-button;
+    display: inline-flex;
     
     &.no-cursor {
         cursor: default;
@@ -65,11 +66,11 @@ button {
     &-grey-outline {
         border: 1.6px solid #C0CCCC;
         background-color: transparent;
-        color: #AFC0BF;
+        color: #AFC0BF !important;
 
         &:hover {
-            border-color: hsl(180, 11%, 74%);
-            color: hsl(176, 12%, 68%)
+            border-color: hsl(180, 11%, 70%);
+            color: hsl(176, 12%, 60%) !important;
         }
 
         & > div {
