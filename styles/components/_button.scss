@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     line-height: 17px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
     text-decoration: none !important;
 }
 
@@ -32,6 +32,12 @@ button {
     
     &.no-cursor {
         cursor: default;
+    }
+
+    i {
+        font-size: 17px;
+        position: relative;
+        top: 1px;
     }
 
     &-grey-solid {

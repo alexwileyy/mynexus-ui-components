@@ -3,7 +3,7 @@
 .updates-box {
     background-color: white;
     border-radius: 53.39px;
-    padding: 50px;
+    padding: $boxPadding;
 
     &__title {
         font-size: $boxTitleFontSize;

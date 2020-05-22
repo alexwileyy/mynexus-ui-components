@@ -1,0 +1,177 @@
+@import '../variables';
+.subscription-overlay {
+    background-color: white;
+    border-radius: $boxBorderRadius;
+    display: flex;
+    background-color: #EBF2F2;
+
+    &__title {
+        font-size: $boxTitleFontSize;
+        font-weight: 700;
+        margin-bottom: 35px;
+        color: #4d5b59;
+        // padding: 0 $boxPadding;
+    }
+
+
+    &__left {
+        flex: 1.7;
+        border-radius: $boxBorderRadius 0 0 $boxBorderRadius;
+        background-color: white;
+        padding: $boxPadding 0 $boxPadding $boxPadding;
+
+        &--plans {
+            display: flex;
+            flex-wrap: wrap;
+
+            .sub-option {
+                margin-right: 40px;
+                margin-bottom: 15px;
+                @media screen and (max-width: 450px){
+                    margin-right: 0;
+                    width: 100%;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &--details {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 30px 0 15px 0;
+
+            .number-users {
+                margin-right: 30px;
+                margin-bottom: 15px;
+                @media screen and (max-width: 450px) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &--total-price {
+            font-size: 30px;
+            font-weight: 700;
+            color: #B0C1C0;
+            margin-bottom: 15px;
+        }
+
+        &--card {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &--field {
+            margin-bottom: 30px;
+            margin-right: 15px;
+            label {
+                color: #728783;
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &--cn {
+            width: 60%;
+        }
+
+        &--cvv {
+            width: 30%;
+            max-width: 130px;
+        }
+
+        &--ed {
+            & > div {
+                display: flex;
+                flex-wrap: wrap;
+                .dropdown {
+                    margin-right: 15px;
+                    margin-bottom: 10px;
+                    span {
+                        color: #728783;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            flex: 100%;
+            border-radius: $boxBorderRadius;
+            padding: $boxPadding;
+        }
+
+        @media screen and (max-width: 450px) {
+            padding: 20px;
+        }
+    }
+
+    &__right {
+        flex: 1;
+        border-radius: 0 $boxBorderRadius $boxBorderRadius 0;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 100%;
+            left: -1px;
+            top: 0;
+            background-color: white;
+            border-radius: 0 $boxBorderRadius $boxBorderRadius 0;
+            @media screen and (max-width: 992px) {
+                visibility: hidden;
+            }
+        }
+
+        .sub-plan {
+            transform: translateY(0);
+            box-shadow: none;
+            border-radius: 0 $boxBorderRadius $boxBorderRadius 0;
+            @media screen and (max-width: 992px) {
+                border-radius: $boxBorderRadius;
+            }
+        }
+
+        .sub-plan__info--list-item {
+            @media screen and (max-width: 992px) {
+                justify-content: center;
+            }
+        }
+
+        .sub-plan__title, .sub-plan__info--price, .sub-plan__info--wrapper {
+            padding-left: 40px;
+            @media screen and (max-width: 992px) {
+                padding-left: 0;
+            }
+        }
+
+        .sub-plan__info {
+            border-radius: 0 53px 53px 0;
+            @media screen and (max-width: 992px) {
+                border-radius: 20px;
+            }
+        }
+
+        .sub-plan__icon-header {
+            padding-left: 55px;
+            @media screen and (max-width: 992px) {
+                padding-left: 15px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            flex: 100%;
+            border-radius: $boxBorderRadius;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        flex-wrap: wrap;
+    }
+}

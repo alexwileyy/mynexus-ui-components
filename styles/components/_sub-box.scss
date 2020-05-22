@@ -1,0 +1,50 @@
+.sub-box {
+    background-color: white;
+    border-radius: 53.39px;
+    padding: $boxPadding;
+
+    &__title {
+        font-size: $boxTitleFontSize;
+        font-weight: 700;
+        margin-bottom: 35px;
+        color: #4d5b59;
+    }
+
+    &__footer {
+        margin-top: 30px;
+        h4 {
+            color: #4D5B59;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        &--split {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            p {
+                font-size: 13px;
+                color: #728783;
+                margin-bottom: 5px;
+                flex: 2;
+                padding-right: 20px;
+
+                @media screen and (max-width: 580px) {
+                    flex: 100%;
+                    margin-bottom: 25px;
+                    padding-right: 0;
+                }
+            }
+
+            & > div {
+                text-align: right;
+                flex: 1;
+
+                @media screen and (max-width: 580px) {
+                    flex: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

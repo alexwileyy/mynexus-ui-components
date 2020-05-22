@@ -1,0 +1,45 @@
+.credit-card {
+    border-radius: 28px;
+    background-color: #EBF2F2;
+    padding: 40px;
+
+    &__header, &__footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__header {
+        
+        &--logo {
+            width: 97px;
+            margin-bottom: 10px;
+        }
+
+        &__edit {
+
+        }
+
+    }
+
+    &__number {
+        font-weight: 700;
+        font-size: 19px;
+        color: #728783;
+        margin: 50px 0;
+        letter-spacing: 1px;
+    }
+
+    &__footer {
+        color: #728783;
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        padding: 20px;
+    }
+}
