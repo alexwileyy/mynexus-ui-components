@@ -1161,7 +1161,8 @@
 
       <div class="col-sm-12 col-lg-12 col-xl-9">
 
-        <div class="text-accordion">
+        <!-- This element has margin-bottom for style guide styliung. Remove for production use -->
+        <div class="text-accordion" style="margin-bottom: 20px;">
 
           <div class="text-accordion__left">
             <div class="text-accordion__left--wrapper">
@@ -1169,6 +1170,89 @@
               <div class="text-accordion__left--image">
                 <img src="img/people-shaking-hands.jpg" alt="People shaking hands" />
                 <h1>Welcoming you to <span>myNexus</span></h1>
+                <div class="text-accordion__left--expanded">
+                  <div class="text-accordion__left--expanded-wrapper">
+                    <div class="text-accordion__image-card">
+                      <img src="img/headset-person.svg" alt="Person talking on a headset"/>
+                      <span>Neque porro quisquam  dolorem</span>
+                    </div>
+                    <div class="text-accordion__image-card">
+                      <img src="img/cloud-download.svg" alt="Person talking on a headset"/>
+                      <span>Qui dolorem ipsum quia </span>
+                    </div>
+                    <div class="text-accordion__image-card">
+                      <img src="img/phone-sound.svg" alt="Person talking on a headset"/>
+                      <span>Amet consectetur </span>
+                    </div>
+                  </div>
+                  <ul class="slider-track">
+                    <li></li>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p class="text-accordion__left--small-welcome">Welcome</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-accordion__right">
+            <div class="text-accordion__right--wrapper">
+              <!-- Put slider container here -->
+              <div class="slide">
+                <img class="text-accordion__right--icon" src="img/fingerprint.svg" alt="Fingerprint" />
+                <p class="text-accordion__right--step">Step 2</p>
+                <h4 class="text-accordion__right--title">Numquam ut Aliquam</h4>
+                <p class="text-accordion__right--body">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun.</p>
+              </div>
+              <!-- Control slider here -->
+              <ul class="slider-track">
+                <li></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <img src="img/box-close.svg" alt="Box close menu in top right" class="text-accordion__close" />
+        </div>
+
+        <div class="text-accordion expanded">
+
+          <div class="text-accordion__left">
+            <div class="text-accordion__left--wrapper">
+              <p class="text-accordion__left--title">New Features</p>
+              <div class="text-accordion__left--image">
+                <img src="img/people-shaking-hands.jpg" alt="People shaking hands" />
+                <h1>Welcoming you to <span>myNexus</span></h1>
+                <div class="text-accordion__left--expanded">
+                  <div class="text-accordion__left--expanded-wrapper">
+                    <div class="text-accordion__image-card">
+                      <img src="img/headset-person.svg" alt="Person talking on a headset"/>
+                      <span>Neque porro quisquam  dolorem</span>
+                    </div>
+                    <div class="text-accordion__image-card">
+                      <img src="img/cloud-download.svg" alt="Person talking on a headset"/>
+                      <span>Qui dolorem ipsum quia </span>
+                    </div>
+                    <div class="text-accordion__image-card">
+                      <img src="img/phone-sound.svg" alt="Person talking on a headset"/>
+                      <span>Amet consectetur </span>
+                    </div>
+                  </div>
+                  <ul class="slider-track">
+                    <li></li>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p class="text-accordion__left--small-welcome">Welcome</p>
               </div>
             </div>
           </div>

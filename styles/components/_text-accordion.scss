@@ -41,6 +41,47 @@ $borderRadius: 53.39px;
             }
         }
 
+        &--expanded {
+            position: absolute;
+            background-color: #c0cccc;
+            width: 100%;
+            height: auto;
+            min-height: 50%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            border-radius: 0 0 $borderRadius $borderRadius;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+            
+            &-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                z-index: 2;
+            }
+
+            .slider-track {
+                margin: 30px auto 20px auto;
+            }
+        
+        }
+
+        &--small-welcome {
+            position: absolute;
+            bottom: 7px;
+            left: 0;
+            color: white;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            visibility: hidden;
+        }
+
         &--image {
             border-radius: $borderRadius;
             overflow: hidden;
@@ -48,7 +89,7 @@ $borderRadius: 53.39px;
             flex: 1;
             padding: 40px;
 
-            img {
+            & > img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -134,11 +175,48 @@ $borderRadius: 53.39px;
         }
     }
 
+    &__image-card {
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 0 10px;
+        text-align: center;
+        padding: 10px;
+
+        img {
+            width: 52px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        span {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            color: #4D5B59;
+            line-height: 17px;
+        }
+    }
+
     &__close {
         position: absolute;
         top: 0;
         right: 0;
         height: 115.18px;
+    }
+
+    &.expanded {
+        .text-accordion__left--image {
+            border-radius: 0 0 $borderRadius $borderRadius;
+        }
+        .text-accordion__left--expanded {
+            visibility: visible;
+        }
+        .text-accordion__left--small-welcome {
+            visibility: visible;
+        }
     }
 
 }
