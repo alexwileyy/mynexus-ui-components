@@ -4,7 +4,7 @@
     align-items: center;
     padding: 15px 20px;
     border-radius: 28px;
-    max-width: 230px;
+    max-width: 250px;
 
     img {
         width: 34px;
@@ -39,11 +39,10 @@
     }
 
     input {
+        outline: none;
         width: 75px;
         text-align: center;
-        padding-left: 19px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 0 10px 19px;
         background: white;
         border-radius: 15px;
         color: #B0C1C0;

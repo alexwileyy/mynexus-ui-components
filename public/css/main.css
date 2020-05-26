@@ -166,7 +166,7 @@ button.no-cursor {
       padding: 6px;
       margin-right: 23px; }
 
-.input {
+input {
   border-radius: 30px;
   background-color: #EBF2F2;
   border: none;
@@ -178,18 +178,20 @@ button.no-cursor {
   outline: none;
   color: #728783;
   font-size: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 1px; }
+  input::-webkit-input-placeholder {
+    color: #72878397; }
+  input::-moz-placeholder {
+    color: #72878397; }
+  input:-ms-input-placeholder {
+    color: #72878397; }
+  input::-ms-input-placeholder {
+    color: #72878397; }
+  input::placeholder {
+    color: #72878397; }
+
+.input {
   position: relative; }
-  .input::-webkit-input-placeholder {
-    color: #72878397; }
-  .input::-moz-placeholder {
-    color: #72878397; }
-  .input:-ms-input-placeholder {
-    color: #72878397; }
-  .input::-ms-input-placeholder {
-    color: #72878397; }
-  .input::placeholder {
-    color: #72878397; }
   .input-without-icon {
     padding-right: 25px; }
   .input-icon {
@@ -1618,7 +1620,7 @@ input[type=checkbox], input[type=radio] {
   align-items: center;
   padding: 15px 20px;
   border-radius: 28px;
-  max-width: 230px; }
+  max-width: 250px; }
   .number-users img {
     width: 34px; }
     @media screen and (max-width: 450px) {
@@ -1646,11 +1648,10 @@ input[type=checkbox], input[type=radio] {
         font-size: 20px;
         padding: 4px 13px; } }
   .number-users input {
+    outline: none;
     width: 75px;
     text-align: center;
-    padding-left: 19px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 19px;
     background: white;
     border-radius: 15px;
     color: #B0C1C0;
