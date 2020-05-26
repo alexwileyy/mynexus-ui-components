@@ -38,6 +38,20 @@
         }
     }
 
+    input {
+        width: 75px;
+        text-align: center;
+        padding-left: 19px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: white;
+        border-radius: 15px;
+        color: #B0C1C0;
+        font-weight: 700;
+        font-size: 29px;
+        border: none;
+    }
+
     @media screen and (max-width: 450px) {
         padding: 6px 15px;
     }
